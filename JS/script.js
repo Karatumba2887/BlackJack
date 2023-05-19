@@ -1,12 +1,42 @@
-//let cards = [2,3,4,5,6,7,8,9,10,V,D,K,A]
 
-let images = document.createElement("img");
-images.src = "./pngwing.com.png";
-images.width = "1000";
-images.height = "550";
-let div1 = document.createElement("div");
-div1.append(images);
-document.body.append(div1);
+function addRandomCards() {
+    // Создаем массив всех доступных мастей и значений
+    const suits = ['clubs', 'diamonds', 'hearts', 'spades'];
+    const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+
+    const cardsContainer = document.querySelector('.cards-container');
+    const cards = Array.from(cardsContainer.getElementsByClassName('card'));
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let images = document.createElement("img");
+// images.src = "./pngwing.com.png";
+// images.width = "1000";
+// images.height = "550";
+// let div1 = document.createElement("div");
+// div1.append(images);
+// document.body.append(div1);
 
 
 
