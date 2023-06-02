@@ -8,116 +8,42 @@
     position: relative;
 }
 
-.card .top-left,
-.card .bottom-right {
-    position: absolute;
-    font-size: 20px;
-    font-weight: bold;
-    color: red;
-}
 
-.card .top-left {
+
+ .top-left {
     top: 10px;
     left: 10px;
-}
-
-.card .bottom-right {
-    bottom: 10px;
-    right: 10px;
-    transform: rotate(180deg);
-}
-
-.card .suitH {
-    position: absolute;
-    font-size: 50px;
-    font-weight: bold;
-    color: red;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.card .suitH::before {
-    content: "♥";
- }
-
- .card .suitD {
-     position: absolute;
-     font-size: 50px;
-     font-weight: bold;
-     color: red;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
- }
-
- .card .suitD::before {
-     content: "♦";
-}
-/* BLACK*/
-.card .suitS {
-    position: absolute;
-    font-size: 50px;
-    font-weight: bold;
-    color: black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.card .suitS::before {
-    content: "♠";
-}
- .card .top-leftS,
- .card .bottom-rightS {
      position: absolute;
      font-size: 20px;
      font-weight: bold;
-     color: black;
- }
-
- .card .top-leftS {
-     top: 10px;
-     left: 10px;
- }
-
- .card .bottom-rightS {
-     bottom: 10px;
-     right: 10px;
-     transform: rotate(180deg);
- }
-
-
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 20px;
+     color: red;
 }
- .card .suitC {
+
+ .bottom-right {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(180deg);
      position: absolute;
-     font-size: 50px;
+     font-size: 20px;
      font-weight: bold;
-     color: black;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
+     color: red;
+}
+
+ .suit {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.suit::before {
+    content: "";
  }
 
- .card .suitC::before {
-     content: "♣";
- }
 
-
-
-
-
- .card .bottom-rightC {
-     bottom: 10px;
-     right: 10px;
-     transform: rotate(180deg);
- }
  .cards-container {
-     display: none;
+
  }
