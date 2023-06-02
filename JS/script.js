@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
   const suits = ['♣️', '♦️', '♥️', '♠️'];
   const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']; //arrays
 
@@ -55,6 +56,12 @@ function newCard(){
 
  return elementCard;
 
+=======
+function createDeck() {
+    // Создаем массив всех доступных мастей и значений
+    const suits = ['clubs', 'diamonds', 'hearts', 'spades'];
+    const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
+>>>>>>> cbb9161c9ab0ca13ef6f96f6349a566c44be08c9
 }
  const container = document.getElementById('cards-container');
  const cardElement = newCard();
@@ -62,6 +69,10 @@ function newCard(){
 
 
 
+function renderCard(card, playerId) {
+// create html version of card
+
+<<<<<<< HEAD
 
 
 
@@ -110,4 +121,9 @@ function newCard(){
 
 
 
-
+=======
+// search tag of player hand and add card to index.html
+ const playerHand = document.querySelector('.hand_' + playerId);
+//add card tags
+}
+>>>>>>> cbb9161c9ab0ca13ef6f96f6349a566c44be08c9
