@@ -1,28 +1,37 @@
-
-
 const suits = ['♣️', '♦️', '♥️', '♠️'];
-const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']; //arrays
+const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A'];
 
 
-const deck = [];    //array for the deck
-
-for (let suit of suits) {           //cycle that creating objects for cards
-    for (let value of values) {
-        const card = { suit, value };
-        deck.push(card);
+function createDeck() {
+    const deck = [];
+    for (let suit of suits) {
+        for (let value of values) {
+            const card = {suit, value};
+            deck.push(card);
+        }
     }
+
+    for (let i = 0; i < 1000; i++) {
+        const randomNumber = Math.floor(Math.random() * deck.length);
+        const randomNumber2 = Math.floor(Math.random() * deck.length);
+        const tempCard = deck[randomNumber];
+        deck[randomNumber] = deck[randomNumber2];
+        deck[randomNumber2] = tempCard;
+    }
+    console.log(deck)
+    return deck
 }
 
-function getRandomObject(cards) {       //function for mixing cards
-    const randomObject = Math.floor(Math.random() * cards.length);
-    return cards[randomObject];
+const deck = createDeck();
+
+function getRandomCard(cards) {
+    const randomNumber = Math.floor(Math.random() * cards.length);
+    return cards[randomNumber];
 }
 
-const randomCart = getRandomObject(deck)
+const randomCart = getRandomCard(deck)
 
-
-
-function newCard(){
+function newCard(randomCart) {
     const elementCard = document.createElement("div");
     elementCard.className = "card";
 
@@ -57,7 +66,37 @@ function newCard(){
     return elementCard;
 
 }
+
 const container = document.getElementById('cards-container');
-const cardElement = newCard();
+const cardElement = newCard(randomCart);
 container.appendChild(cardElement);
 
+class Player {
+    constructor(name, cardsHas, score) {
+        this.name = name;
+        this.cardsHas = cardsHas;
+        this.score = score;
+    }
+
+    movingCard(deck) {
+
+        const deleteCards = deck.splice(0, 3);
+        this.cardsHas.push(...deleteCards);
+    }
+
+}
+
+const player = new Player("Yasu", [], 0);
+player.movingCard(deck);
+console.log(player);
+
+// for (deck.length = -1; i > 0 ; i--) {
+//     console.log("hi")
+// }
+console.log(deck.length)
+
+
+for (let i = 5; i > 0 ; i--) {
+    console.log(i)
+
+}
