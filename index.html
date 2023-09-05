@@ -2,10 +2,10 @@
 <html>
 
 <head>
-	    <link rel="stylesheet" type="text/css" href="./css/Black_Jack.css">
-		<link  rel="stylesheet" type="text/css" href="./css/cards.css">
-	    <meta charset="utf-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel='stylesheet' type='text/css' href='./css/Black_Jack.css'>
+		<link  rel='stylesheet' type='text/css' href='./css/cards.css'>
+	    <meta charset='utf-8'>
+	    <meta name='viewport' content='width=device-width, initial-scale=1'>
 	    <title>Black Jack</title>
 
 </head>
@@ -14,16 +14,25 @@
 		<header>
 			<h1> Black Jack</h1>
 		</header>
+		<div  ID='cards-container'></div>
+		<script type='module' src='/JS/Player.js'> </script>
+		<script type='module' src='/JS/script.js'>  </script>
 
-	<div class="conteiner">
-		<button class="start " class="red"> Start</button>
+	<div class='container'>
+		<button  class='start' >Start</button>
+		<div id='inputContainer' class='hidden'>
+			<input type='text' class='nameInput' placeholder='Enter player name'>
+			<button class ='startGame'> Finished </button>
+			<button class='addPlayer'>Add player</button>
+			<div class='containerBK'></div>
+		</div>
+		<div id='playerInfo' class='hidden'>
+
 	</div>
 
-	<div  ID="cards-container"></div>
-	<script src="/JS/Player.js"> </script>
-	<script src="/JS/script.js">  </script>
+		<footer>
+
+		</footer>
 </body>
 
-<footer>
-	
-</footer>
+

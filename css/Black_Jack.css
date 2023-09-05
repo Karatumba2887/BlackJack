@@ -3,16 +3,16 @@ body{
 }
 
 header{
-	font-family: algeriand;
-	margin-top: 1;
+
 	background-color: rgba(255, 26, 31, 1);
 	height: 150px;
 }
 
 h1{
-	margin-top: 62 px;
+	font-family: algeriand;
+	padding-top: 50px;
 	text-align: center;
-
+	display: block;
 }
 
 h2{
@@ -35,4 +35,46 @@ opacity: 0.7;
 	font-size:  80px;
 	border: 10px black;
 	cursor: pointer;
+}
+.hidden2{
+	display: none;
+}
+.hidden {
+	display: none;
+}
+.card-container {
+	display: flex;
+}
+.nameInput{
+	align-items: center;
+	background-color: red;
+}
+
+#inputContainer{
+
+	height: 250px;
+	width: 350px;
+	margin-left: 700px;
+	margin-top: 200px;
+	padding-left: 99px;
+	align-items: center;
+	background-color: red;
+	font-size: 100px;
+	border: 10px solid black;
+
+}
+.backgroundDeck {
+	width: 100px;
+	height: 150px;
+	background-color: aqua;
+	border: 1px solid black;
+	border-radius: 10px;
+	align-items: center;
+
+}
+.move{
+	margin-left: 700px;
+}
+.takeCard {
+	margin-left: 700px;
 }
